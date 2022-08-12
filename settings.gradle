@@ -1,0 +1,3 @@
+rootProject.name = "KotlinException"
+include ':app'
+include ':ktexception'

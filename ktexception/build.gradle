@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+    id 'kotlin'
+    id 'kotlin-kapt'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    implementation kotlin.kotlin_stdlib
+    implementation kotlin.coroutines.coroutines_core
+
+
+
+    // 动态注册服务
+    implementation 'com.google.auto.service:auto-service-annotations:1.0'
+    kapt 'com.google.auto.service:auto-service:1.0'
+}
